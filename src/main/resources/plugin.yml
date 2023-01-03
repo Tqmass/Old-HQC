@@ -1,0 +1,29 @@
+name: Core
+version: '${project.version}'
+main: hqwks.core.CoreMain
+api-version: 1.19
+authors: [ Hqwks ]
+description: Core by Hqwks.
+commands:
+  gamemode:
+    description: Cambia tu modo de juego.
+    usage: /<command>
+    aliases:
+      - gm
+  resetkit:
+    description: Resetea tu kit.
+    usage: /<command>
+    aliases:
+      - rk
+      - spawn
+  trash:
+    name: Trash
+    description: Abre un basurero.
+    usage: /<command>
+    aliases:
+      - basurero
+  heal:
+    description: Curate o cura a alguien.
+    usage: /<command>
+    aliases:
+      - curar
