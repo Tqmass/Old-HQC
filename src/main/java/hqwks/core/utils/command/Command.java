@@ -1,3 +1,5 @@
+package hqwks.core.utils.command;
+
 import lombok.Getter;
 import lombok.Setter;
 import org.bukkit.Bukkit;
