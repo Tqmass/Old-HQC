@@ -20,7 +20,13 @@ public class CoreMain extends JavaPlugin {
     public void onEnable() {
         registerListeners(new Listener[] { (Listener)new DisableJoinMessage(), (Listener)new DisableLeaveMessage(), (Listener)new DeathEffect()});
         registerCommands();
-
+        
+        CommandRegistry commandRegistry = new CommandRegisterProvider();
+        
+        commandRegistry.register(            
+            new TestCommand()
+        );
+        
         DiscordWebhook webhook = new DiscordWebhook(webhookURL);
         webhook.addEmbed(new DiscordWebhook.EmbedObject().setDescription("¡Plugin iniciado correctamente!"));
 
