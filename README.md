@@ -1,9 +1,5 @@
 #HQC - Learning Java
 
-<h1 align="center"> 
-[image](https://i.pinimg.com/originals/80/93/38/809338cda1b421b56d3c2826601cddb7.jpg)
-</h1>
-
 h4 align="center">「Permissions | Commands | Events | Utilities」</h4>
 
 <a href="https://github.com/Nathaniel-VFX/Discord.js-v14-Command-Handlers/fork">
