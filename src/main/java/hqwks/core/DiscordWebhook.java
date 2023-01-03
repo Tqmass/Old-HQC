@@ -11,9 +11,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Class used to execute Discord Webhooks with low effort
- */
 public class DiscordWebhook {
 
     private final String url;
@@ -23,11 +20,6 @@ public class DiscordWebhook {
     private boolean tts;
     private List<EmbedObject> embeds = new ArrayList<>();
 
-    /**
-     * Constructs a new DiscordWebhook instance
-     *
-     * @param url The webhook URL obtained in Discord
-     */
     public DiscordWebhook(String url) {
         this.url = url;
     }
@@ -150,7 +142,7 @@ public class DiscordWebhook {
         stream.flush();
         stream.close();
 
-        connection.getInputStream().close(); //I'm not sure why but it doesn't work without getting the InputStream
+        connection.getInputStream().close();
         connection.disconnect();
     }
 
