@@ -1,10 +1,7 @@
 #HQC - Learning Java
 
-<div align="center">
-	<br />
-		<p dir="auto">Discord: <code>Tomas#5250</code></p>
-	</br>
-	</div>
+##Authors:
+<p dir="auto">Discord: <code>Tomas#5250</code> & <code>Santova#5350</code></p>
 
 <div align="center">
 	<br />
