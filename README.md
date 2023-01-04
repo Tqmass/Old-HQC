@@ -1,7 +1,9 @@
-#HQC - Learning Java
+# HQC - Learning Java
 
-##Authors:
+## Authors
 <p dir="auto">Discord: <code>Tomas#5250</code> & <code>Santova#5350</code></p>
+
+## Status (Discord)
 
 <div align="center">
 	<br />
