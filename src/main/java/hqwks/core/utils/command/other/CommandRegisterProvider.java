@@ -1,5 +1,13 @@
 package hqwks.core.utils.command.other;
 
+import hqwks.core.utils.command.Command;
+import org.bukkit.Bukkit;
+import org.bukkit.Server;
+import org.bukkit.command.CommandMap;
+
+import java.lang.reflect.Field;
+import java.util.*;
+
 public class CommandRegisterProvider implements CommandRegistry {
 
     @SuppressWarnings("unchecked")
