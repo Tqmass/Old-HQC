@@ -1,21 +1,16 @@
 package hqwks.core.commands;
 
 import hqwks.core.CoreMain;
+import hqwks.core.utils.command.Command;
+import hqwks.core.utils.command.CommandInfo;
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-public class ResetKitCommand implements CommandExecutor {
-
-    private CoreMain plugin;
-
-    public ResetKitCommand(CoreMain plugin) {
-        this.plugin = plugin;
-    }
+@CommandInfo(name = "resetkit", aliases = {"rk"}, playerOnly = true)
+public class ResetKitCommand extends Command {
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(CommandSender sender, String[] args) {
 
         Player p = (Player) sender;
         if(sender instanceof Player){
