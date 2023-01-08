@@ -1,23 +1,18 @@
 package hqwks.core.commands.staff;
 
-import hqwks.core.CoreMain;
 import hqwks.core.utils.Utilities;
+import hqwks.core.utils.command.Command;
+import hqwks.core.utils.command.CommandInfo;
 import org.bukkit.Bukkit;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class HealCommand implements CommandExecutor {
+@CommandInfo(name = "heal", aliases = {"curar"}, playerOnly = false)
 
-    private CoreMain plugin;
-
-    public HealCommand(CoreMain plugin){
-        this.plugin = plugin;
-    }
+public class HealCommand extends Command {
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(CommandSender sender, String[] args) {
 
         if (sender instanceof Player) {
 
