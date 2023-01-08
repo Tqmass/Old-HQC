@@ -1,24 +1,19 @@
 package hqwks.core.commands.staff;
 
-import hqwks.core.CoreMain;
 import hqwks.core.utils.Utilities;
+import hqwks.core.utils.command.Command;
+import hqwks.core.utils.command.CommandInfo;
 import org.bukkit.Bukkit;
 import org.bukkit.GameMode;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class GameModeCommand implements CommandExecutor {
+@CommandInfo(name = "gamemode", aliases = {"gm"}, playerOnly = false)
 
-    private CoreMain plugin;
-
-    public GameModeCommand(CoreMain plugin) {
-        this.plugin = plugin;
-    }
+public class GameModeCommand extends Command {
 
     @Override
-    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+    public boolean onCommand(CommandSender sender, String[] args) {
 
         if (sender instanceof Player) {
 
